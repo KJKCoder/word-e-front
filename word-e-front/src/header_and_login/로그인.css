@@ -1,0 +1,23 @@
+.로그인창{
+    position: absolute;
+    width: 300px;
+    top: 20%;
+    left: 40%;
+    background-color: #2F3661;
+    color: white;
+    border-radius: 3%;
+}
+
+.로그인창 input{
+    position: absolute;
+    right: 10%;
+}
+
+.로그인창 > div{
+    margin-left: 20px;
+}
+
+.로그인창 button{
+    margin-left: 70%;
+    margin-bottom: 5%;
+}

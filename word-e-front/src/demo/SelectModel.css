@@ -1,0 +1,41 @@
+.SelectModelModal .page_contents{
+    position: relative;
+    left: 95px;
+}
+
+.SelectModelModal > div > div{
+    background-color: #FFBFB0;
+    position: absolute;
+    width: 188px;
+    height: fit-content;
+    right: 10%;
+    top: 165px;
+
+    border: solid black 2px;
+    border-radius: 3%;
+}
+
+.SelectModelModal > div > div div{
+    margin-left: 5px;
+    margin-right: 5px
+}
+
+.SelectModelModal label{
+    display: inline-block;
+    font-size: 50%;
+    width: 165px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.SelectModelModal .delete_button{
+    float: right;
+}
+.SelectModelModal .delete_button:hover{
+    cursor: pointer;
+}
+
+.SelectModelModal label:hover{
+    cursor: pointer;
+}

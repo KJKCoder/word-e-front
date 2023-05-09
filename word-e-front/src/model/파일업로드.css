@@ -1,0 +1,57 @@
+.FileUpload .상단틀{
+    height: 30px;
+
+    background: #2F3661;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.FileUpload .하단틀{
+    height: 30px;
+    
+    background: #2F3661;
+
+    flex: none;
+    order: 5;
+    flex-grow: 0;
+}
+
+.FileUpload .field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FileUpload body{
+    background-color: #D9D9D9;
+}
+
+.FileUpload a:hover{
+    cursor:pointer;
+}
+
+.FileUpload img{
+    width:350px;
+}
+
+.FileUpload .업로드버튼{
+    width:100px;
+}
+.FileUpload .uploadbutton{
+    border: none;
+    background-color: #D9D9D9;
+}
+
+.FileUpload{
+    position: absolute;
+    transform: translateX(-50%);
+    top: 5%;
+    left: 50%;
+    width: 500px;
+}
+
+.FileUpload img:hover{
+    cursor: pointer;
+}

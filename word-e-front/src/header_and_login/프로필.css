@@ -1,0 +1,49 @@
+.프로필팝업 a:hover{
+    cursor:pointer;
+}
+
+.프로필팝업 .아이콘{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 45%;
+    top: 10%;
+    width: 30%;
+}
+
+.프로필팝업 .field{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    text-align: center;
+}
+
+.프로필팝업 .field > div{
+    position: absolute;
+    transform: translateX(-55%);
+    top: 50%;
+}
+
+.프로필팝업{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 54px 30px;
+    gap: 32px;
+
+    position: relative;
+    width: 200px;
+    height: 200px;
+
+    background: #2F3661;
+    border-radius: 5%;
+}
+.로그인후 a > h2{
+    position: absolute;
+    left: 15%;
+    top: 70%;
+}
+.프로필팝업 a > img{
+    margin: -10px;
+    width: 200px;
+}

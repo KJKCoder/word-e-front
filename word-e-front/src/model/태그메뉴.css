@@ -1,0 +1,43 @@
+.좌측메뉴{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 5px;
+
+    width: 80px;
+    height: 280px;
+    left: 2px;
+    top: 100px;
+    
+    background: #2F3661;
+    border-radius: 30px;
+}
+
+.좌측메뉴 > .header{
+    width: 75px;
+    height: 50px;
+    top: 50px;
+    background-color: #222747;
+}
+
+.좌측메뉴 > .button{
+    width: 75px;
+    height: 50px;
+    top: 50px;
+
+    background-color: #2F3661;
+}
+
+.좌측메뉴 > .button:hover{
+    cursor:pointer;
+}
+
+
+.좌측메뉴 > div > p{
+    font-size: large;
+    text-align: center;
+    color: #FFFFFF;
+}

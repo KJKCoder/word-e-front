@@ -1,0 +1,79 @@
+body{
+    background-color: #FFFFFF;
+}
+
+.단어데모페이지 .page_contents{
+    position: relative;
+    left: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.단어데모페이지 .모델선택버튼{
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    right: 10%;
+    top: 20px;
+}
+.단어데모페이지 .page_contents > .검색어박스{
+    height: 40px;
+}
+
+.단어데모페이지 .검색버튼{
+    position: absolute;
+    max-width: 18%;
+    height: auto;
+    right: 10%;
+}
+
+
+.단어데모페이지 .검색어입력{
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    font-style: bold;
+    font-size: large;
+    top: -10px;
+}
+
+.단어데모페이지 .현재모델{
+    position: relative;
+    width: 90%;
+    height: 65px;
+    top: 1px;
+    background-color: #F5F1EE;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.단어데모페이지 .검색결과{
+    position: relative;
+    width: 90%;
+    height: 500px;
+    top: 1px;
+    background-color: #F5F1EE;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+.단어데모페이지 .모델선택버튼:hover{
+    cursor:pointer;
+}
+
+.단어데모페이지 a{
+    text-decoration:none;
+    color: black;
+}
+
+.단어데모페이지 .검색버튼:hover{
+    cursor: pointer;
+}
+
+.단어데모페이지 .검색결과 > p{
+    margin-left: 20px;
+    font-size: larger;
+}

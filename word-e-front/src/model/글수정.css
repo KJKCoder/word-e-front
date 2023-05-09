@@ -1,0 +1,107 @@
+.글수정페이지 body{
+    background-color: #FFFFFF;
+}
+
+.글수정페이지 .page_contents{
+    position: relative;
+    left: 50px;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+}
+
+.글수정페이지 .page_contents > .수평요소wrapper{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.글수정페이지 .선택버튼{
+    box-sizing: border-box;
+
+    position: relative;
+    top: 10px;
+    width: 200px;
+    background: #3D5A5C;
+    border: 3px solid #000000;
+    box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    
+    margin: 2px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.글수정페이지 .title_box{
+    position: relative;
+    width: 95%;
+    top: 10px;
+}
+
+.글수정페이지 .title_box > textarea{
+    font-size: xx-large;
+    width: 99%;
+    height: 40px;
+    background-color: #F5F1EE;
+    border-radius: 5px;
+}
+
+.글수정페이지 .model_box{
+    width: 95%;
+    height: 500px;
+}
+
+.글수정페이지 .model_box > textarea{
+    position: relative;
+    font-size: large;
+    top: 20px;
+    width: 99%;
+    height: 100%;
+    background-color: #F5F1EE;
+    border-radius: 5px;
+}
+
+.글수정페이지 .파일첨부버튼{
+    position: absolute;
+    top: 15px;
+    width: 200px;
+    right: 250px;
+}
+
+.글수정페이지 .글저장버튼{
+    position: absolute;
+    top: 15px;
+    width: 200px;
+    right: 55px;
+}
+
+.글수정페이지 .글저장버튼:hover{
+    cursor: pointer;
+}
+
+.글수정페이지 a{
+    cursor:pointer;
+}
+
+.글수정페이지 button{
+    cursor:pointer;
+}
+
+.글수정페이지 .tag_box{
+    position: relative;
+    width: 95%;
+    top: 10px;
+}
+
+.글수정페이지 .tag_box > textarea{
+    font-size: xx-large;
+    width: 99%;
+    height: 80px;
+    background-color: #F5F1EE;
+    border-radius: 5px;
+}
+
+.글수정페이지 .파일첨부버튼:hover{
+    cursor: pointer;
+}

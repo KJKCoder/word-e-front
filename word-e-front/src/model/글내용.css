@@ -1,0 +1,88 @@
+body{
+    background-color: #FFFFFF;
+}
+
+.글내용 .page_contents{
+    position: relative;
+    left: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.글내용 .page_contents > .수평요소wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.글내용 .선택버튼{
+    box-sizing: border-box;
+
+    position: static;
+    width: 200px;
+    background: #3D5A5C;
+    border: 3px solid #000000;
+    box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    
+    margin: 2px;
+    text-align: center;
+}
+
+.글내용 .선택버튼{
+    color: #FFFFFF;
+}
+
+.글내용 .import버튼{
+    position: absolute;
+    width: 220px;
+    right: 10%;
+    top: 10px;
+}
+
+.글내용 .검색어입력{
+    display: flex;
+    align-items: center;
+    font-style: bold;
+    font-size: large;
+}
+
+.글내용 .검색어입력 > textarea{
+    font-size: large;
+    width: 140px;
+    height: 30px;
+}
+
+
+.글내용 .contents{
+    position: relative;
+    width: 90%;
+    height: 500px;
+    top: 1px;
+    background-color: #F5F1EE;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+.글내용 .다운로드버튼{
+    position: absolute;
+    width: 200px;
+    left: 0;
+}
+
+.글내용 .글수정버튼{
+    position: absolute;
+    width: 100;
+    right: 10%;
+}
+
+.글내용 a{
+    cursor:pointer;
+}
+
+.글내용 button:hover{
+    cursor:pointer;
+}
