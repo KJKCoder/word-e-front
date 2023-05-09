@@ -42,7 +42,7 @@ function ModifyPage() {
 
     const post_write_to_save = (datas) => {
         if (write_contents["태그"].length==0){alert("최소 하나의 태그를 입력하세요"); return false} 
-        axios.put(`http://word-e-back:8000/model/modify/${postID}/`, Object.assign({}, write_contents, get_auth_header())).then(res=>{
+        axios.put(`word-e-back:8000/model/modify/${postID}/`, Object.assign({}, write_contents, get_auth_header())).then(res=>{
             alert("저장되었습니다.")
             navigate(`/model/`)
             return true
