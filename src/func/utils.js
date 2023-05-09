@@ -1,9 +1,11 @@
 import axios from "axios";
 
+const base_url = "https://web-word-e-front-5llo2alhg6lxfy.sel4.cloudtype.app/"
+
 export async function post_demo_words(input_words, model_id){
     try{
         const datas = {"input_words":input_words, "모델_id":model_id}
-        const res = await axios.post(`http://127.0.0.1:8000/demo/word`, datas)
+        const res = await axios.post(`${base_url}demo/word`, datas)
 
         if (res.status === 200) {
             return res.data
@@ -19,7 +21,7 @@ export async function post_demo_words(input_words, model_id){
 export async function post_demo_sentence(target_sentence, sentence_list, model_id){
     try{
         const datas = {"모델_id":model_id, "input_sentence":target_sentence, "sentence_list":sentence_list}
-        const res = await axios.post(`http://127.0.0.1:8000/demo/sentence`, datas)
+        const res = await axios.post(`${base_url}demo/sentence`, datas)
 
         if (res.status === 200) {
             return res.data
@@ -45,7 +47,7 @@ export function remove_auth_token(){
 
 export async function get_user_info(){
     try{
-        const res = await axios.post(`http://127.0.0.1:8000/checktoken/`, get_auth_header())
+        const res = await axios.post(`${base_url}checktoken/`, get_auth_header())
 
         if (res.status === 200) {
             return res.data
@@ -59,7 +61,7 @@ export async function get_user_info(){
 
 export async function get_post_contents(model_id){
     try{
-        const res = await axios.post(`http://127.0.0.1:8000/model/modify/${model_id}/`, get_auth_header())
+        const res = await axios.post(`${base_url}model/modify/${model_id}/`, get_auth_header())
 
         if (res.status === 200) {
             return res.data
@@ -73,7 +75,7 @@ export async function get_post_contents(model_id){
 
 export async function get_user_import_model_list(){
     try{
-        const res = await axios.post("http://127.0.0.1:8000/user-import-model-list/", get_auth_header())
+        const res = await axios.post(`${base_url}user-import-model-list/`, get_auth_header())
 
         if (res.status === 200) {
             return res.data
@@ -88,7 +90,7 @@ export async function get_user_import_model_list(){
 
 export async function post_user_import_model(model_id){
     try{
-        const res = await axios.post(`http://127.0.0.1:8000/user-import-model/${model_id}/`, get_auth_header())
+        const res = await axios.post(`${base_url}user-import-model/${model_id}/`, get_auth_header())
 
         if (res.status === 200) {
             return true
@@ -103,7 +105,7 @@ export async function post_user_import_model(model_id){
 
 export async function put_user_import_model(model_id){
     try{
-        const res = await axios.put(`http://127.0.0.1:8000/user-import-model/${model_id}/`, get_auth_header())
+        const res = await axios.put(`${base_url}user-import-model/${model_id}/`, get_auth_header())
 
         if (res.status === 201) {
             return res.data
@@ -118,7 +120,7 @@ export async function put_user_import_model(model_id){
 
 export async function delete_user_import_model(model_id){
     try{
-        const res = await axios.post(`http://127.0.0.1:8000/user-import-model-delete/${model_id}/`, get_auth_header())
+        const res = await axios.post(`${base_url}user-import-model-delete/${model_id}/`, get_auth_header())
 
         if (res.status === 200) {
             return true
@@ -134,7 +136,7 @@ export async function delete_user_import_model(model_id){
 export async function Login_Try(id, password) {
 
     try {
-        const res = await axios.post('http://127.0.0.1:8000/login/', { "아이디":id, "비밀번호":password });
+        const res = await axios.post(`${base_url}login/`, { "아이디":id, "비밀번호":password });
         if (res.status === 200) {
             const { access_token } = res.data;
             localStorage.setItem('access_token', access_token);
@@ -157,7 +159,7 @@ export async function Login_Try(id, password) {
 export async function SignUp_Try(nickname, id, password) {
     
     try{
-        const res = await axios.post('http://127.0.0.1:8000/signup/', { "닉네임":nickname, "아이디":id, "비밀번호":password });
+        const res = await axios.post(`${base_url}signup/`, { "닉네임":nickname, "아이디":id, "비밀번호":password });
         if (res.status === 200){
             return res.data["state"]
         }else{

@@ -35,7 +35,7 @@ function FileUpload(props) {
 
     formData.append("access-token", get_auth_header()["access-token"])
     formData.append("name", post_name)
-    axios.post(`http://localhost:8000/api/upload/${model_id}`, formData, {
+    axios.post(`https://web-word-e-front-5llo2alhg6lxfy.sel4.cloudtype.app/api/upload/${model_id}`, formData, {
       headers: {'Content-Type': 'multipart/form-data'},
       onUploadProgress: (progressEvent) => {const percentCompleted = Math.round((progressEvent.loaded * 100) / progressEvent.total); setProgress(percentCompleted);},
     }).then(response => {
