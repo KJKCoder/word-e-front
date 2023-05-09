@@ -15,7 +15,7 @@ function ModelPage() {
     const [search_word, set_search_word] = useState("");
 
     useEffect(() => {
-        axios.get(`word-e-back:8000/model/search/${tag}/${page}/`, get_auth_header())
+        axios.get(`https://port-0-word-e-back-5llo2alhg6lxfy.sel4.cloudtype.app/model/search/${tag}/${page}/`, get_auth_header())
           .then(response => {
             if (response.status !== 200) {
                 throw new Error('Response status not 200');
