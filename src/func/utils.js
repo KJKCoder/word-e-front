@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const base_url = "word-e-back:8000/"
+const base_url = "https://port-0-word-e-back-5llo2alhg6lxfy.sel4.cloudtype.app/"
 
 export async function post_demo_words(input_words, model_id){
     try{
