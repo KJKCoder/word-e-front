@@ -20,7 +20,7 @@ function PostPage() {
     const [IsLogin, set_IsLogin] = useState(false);
     
     useEffect(() => {
-        axios.get(`https://web-word-e-front-5llo2alhg6lxfy.sel4.cloudtype.app/model/read/${post_id}/`, get_auth_header())
+        axios.get(`http://word-e-back:8000/model/read/${post_id}/`, get_auth_header())
             .then(response => {
                 set_post_contents(response.data); 
                 get_user_info().then(res=>{
@@ -63,7 +63,7 @@ function PostPage() {
         try {
           const response = await axios({
             method: 'get',
-            url: `https://web-word-e-front-5llo2alhg6lxfy.sel4.cloudtype.app/api/download/${post_id}`,
+            url: `http://word-e-back:8000/api/download/${post_id}`,
             responseType: 'blob',
             onDownloadProgress: progressEvent => {
               const percentCompleted = Math.round(

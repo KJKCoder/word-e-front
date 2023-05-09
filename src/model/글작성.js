@@ -40,7 +40,7 @@ function WritePage() {
 
     const post_write_to_save = (datas) => {
         if (write_contents["태그"].length==0){alert("최소 하나의 태그를 입력하세요"); return false} 
-        axios.post(`https://web-word-e-front-5llo2alhg6lxfy.sel4.cloudtype.app/model/write/`, Object.assign({}, datas, get_auth_header())).then(res=>{
+        axios.post(`http://word-e-back:8000/model/write/`, Object.assign({}, datas, get_auth_header())).then(res=>{
             alert("저장되었습니다.")
             navigate(`/model/`)
             return true
